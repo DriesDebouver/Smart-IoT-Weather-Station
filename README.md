@@ -1,4 +1,4 @@
-# Smart IoT Wheather Station
+# Smart IoT Weather Station
 Smart IoT Weather Station based on Arduino Nano 33 IoT
 
 This smart weather station shows:
