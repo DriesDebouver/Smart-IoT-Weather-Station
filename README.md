@@ -29,4 +29,4 @@ Used hardware:
 In the end I made a small case out of MDF but the time was limited:
 ![Done](https://github.com/DriesDebouver/Smart-IoT-Wheather-Station/blob/master/Done.jpg)
 
-Enproject for the course "Embedded Systems - Arduino" in the Internet of Things education.
+Endproject for the course "Embedded Systems - Arduino" in the Internet of Things education.
