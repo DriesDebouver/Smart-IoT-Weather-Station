@@ -10,6 +10,8 @@ This smart weather station shows:
 - Light intensity
 - Pressure
 - Amount of rain ( not really: there is a water sensor on top but as an indicaiton, don't use this outside :) )
+- Sunrise time
+- Sunset time
 
 The Arduino Nano 33 IoT is connected via WiFi and get's the outside temperature and outside humidity by the OpenWeatherMap API.
 The Arduino also serves as a webserver so you can see the weather station's values remotely on another device.
