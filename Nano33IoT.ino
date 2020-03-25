@@ -18,16 +18,16 @@ DHT dht(DHTPIN, DHTTYPE);
 #include <Wire.h>
 SFE_BMP180 bmp;
 char bmpStatus;
-#define ALTITUDE 6.0 //Height from sea-level of your city 
+#define ALTITUDE 6.0   //Height from sea-level of your city 
 
 //WiFi:
 #include <SPI.h>
 #include <WiFiNINA.h>
 #include <WiFi.h>
-char ssid[] = "WiFi-Debouver-2.4";          //WiFi namae (SSID)
-char pass[] = "UzpSk6g9D3E3";          //WiFi pasword
+char ssid[] = "...";   //WiFi name (SSID)
+char pass[] = "...";   //WiFi pasword
 int status = WL_IDLE_STATUS;
-const int GMT = 1;            //Timezone
+const int GMT = 1;   //Timezone
 
 //Real Time myClock:
 #include <RTCZero.h>
@@ -35,8 +35,8 @@ RTCZero rtc;
 
 //WiFi outside weather - OpenWeatherMap.com:
 #include <ArduinoJson.h>
-String apiKey = "61cb04e1c56086dd1670b0508cf2beb3";    //API Key OpenWeatherMap.org
-String location = "2785294";  //City code
+String apiKey = "...";   //API Key OpenWeatherMap.org
+String location = "2785294";   //City code
 char server[] = "api.openweathermap.org";
 WiFiClient client;
 
@@ -46,7 +46,7 @@ WiFiServer server2(80);
 //Blynk App Control:
 #define BLYNK_PRINT Serial
 #include <BlynkSimpleWiFiNINA.h>
-char auth[] = "Uq4Wj4f0NgemsCjBZlSslIQSQZPDVgx1";   //APP authentication code
+char auth[] = "...";   //Blynk App authentication code
 
 //Variables:
 double tempDht;                   //Temperature DHT11 Sensor
@@ -68,8 +68,8 @@ int screen = 0;                   //Screen to change cases from LCD screen
 int greenLedPin = 10;             //Green LED Digital pin
 int yellowLedPin = 11;            //Yellow LED Digital pin
 int redLedPin = 12;               //Red LED Digital pin
-unsigned long sunriseTime;        //Sunrise tijd
-unsigned long sunsetTime;         //Sunset tijd
+unsigned long sunriseTime;        //Sunrise time
+unsigned long sunsetTime;         //Sunset time
 
 
 
@@ -163,7 +163,7 @@ void setup() {
   }
 
   //Blynk:
-  Blynk.begin(auth, ssid, pass, "server.wyns.it", 8081);
+  Blynk.begin(auth, ssid, pass);
 }
 
 
