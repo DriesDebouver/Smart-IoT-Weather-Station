@@ -1,7 +1,7 @@
 # Smart IoT Weather Station
-Smart IoT Weather Station based on Arduino Nano 33 IoT
+## Smart IoT Weather Station based on Arduino Nano 33 IoT
 
-This smart weather station shows:
+### This smart weather station shows:
 - Current date & time
 - Inside temperature
 - Outside temperature
@@ -16,7 +16,7 @@ This smart weather station shows:
 The Arduino Nano 33 IoT is connected via WiFi and get's the outside temperature and outside humidity by the OpenWeatherMap API.
 The Arduino also serves as a webserver so you can see the weather station's values remotely on another device.
 
-Used hardware:
+### Used hardware:
 - Arduino Nano 33 IoT
 - Liquid Crystal Display (16x2)
 - DHT11 Sensor
@@ -31,4 +31,4 @@ Used hardware:
 In the end I made a small case out of MDF but the time was limited:
 ![Done](https://github.com/DriesDebouver/Smart-IoT-Wheather-Station/blob/master/Done.jpg)
 
-Endproject for the course "Embedded Systems - Arduino" in the Internet of Things education.
+##### Endproject for the course "Embedded Systems - Arduino" in the Internet of Things education.
